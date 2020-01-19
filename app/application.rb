@@ -4,7 +4,7 @@
     resp = Rack::Response.new
 
  
-    if num_1==num_2 && num_2==num_3
+    if Time.now < 1200
       resp.write "Good Morning"
     else
       resp.write "Good Afternoon"
